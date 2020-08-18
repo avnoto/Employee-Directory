@@ -1,0 +1,15 @@
+.header {
+  display: flex;
+  height: 125px;
+  background-color: #0b274a;
+  border-bottom: 4px solid #bf1a1a;
+}
+
+.container {
+  margin: auto;
+  text-align: center;
+}
+h2,
+p {
+  color: aliceblue;
+}
