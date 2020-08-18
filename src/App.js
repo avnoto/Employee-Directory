@@ -1,5 +1,5 @@
 import React from 'react';
-// import Directory from './pages/Directory';
+import Table from './components/Table';
 import Header from './components/Header';
 import SearchForm from './components/SearchForm';
 import Wrapper from './components/Wrapper';
@@ -12,7 +12,7 @@ function App() {
       <Wrapper>
         <Header />
         <SearchForm />
-        {/* <Directory /> */}
+        <Table />
         <Footer />
       </Wrapper>
     </div>
