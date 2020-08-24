@@ -1,24 +1,21 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import './style.css';
+import EmployeeContext from '../../utils/EmployeeContext';
 
-// Using the datalist element we can create autofill suggestions based on the props.breeds array
-function SearchForm(props) {
+const SearchForm = () => {
+  const context = useContext(EmployeeContext);
   return (
     <form className='search'>
       <div className='form-group'>
         <input
-          value={props.search}
-          onChange={props.handleInputChange}
-          name='term'
-          list='term'
           type='text'
           className='form-control'
           placeholder='Search for an employee...'
-          id='term'
+          onChange={(e) => context.handleSearchChange(e)}
         />
       </div>
     </form>
   );
-}
+};
 
 export default SearchForm;

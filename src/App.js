@@ -1,7 +1,6 @@
 import React from 'react';
-import Table from './components/Table';
+import Directory from './components/Directory';
 import Header from './components/Header';
-import SearchForm from './components/SearchForm';
 import Wrapper from './components/Wrapper';
 import Footer from './components/Footer';
 import './App.css';
@@ -11,8 +10,7 @@ function App() {
     <div>
       <Wrapper>
         <Header />
-        <SearchForm />
-        <Table />
+        <Directory />
         <Footer />
       </Wrapper>
     </div>
